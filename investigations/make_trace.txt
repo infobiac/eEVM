@@ -1,0 +1,99 @@
+/usr/local/cmake-3.13.1-Linux-x86_64/bin/cmake -S/home/christophe/build_artifacts/eEVM -B/home/christophe/build_artifacts/eEVM/build --check-build-system CMakeFiles/Makefile.cmake 0
+/usr/local/cmake-3.13.1-Linux-x86_64/bin/cmake -E cmake_progress_start /home/christophe/build_artifacts/eEVM/build/CMakeFiles /home/christophe/build_artifacts/eEVM/build/CMakeFiles/progress.marks
+make -f CMakeFiles/Makefile2 all
+make[1]: Entering directory '/home/christophe/build_artifacts/eEVM/build'
+make -f CMakeFiles/evm.dir/build.make CMakeFiles/evm.dir/depend
+make[2]: Entering directory '/home/christophe/build_artifacts/eEVM/build'
+cd /home/christophe/build_artifacts/eEVM/build && /usr/local/cmake-3.13.1-Linux-x86_64/bin/cmake -E cmake_depends "Unix Makefiles" /home/christophe/build_artifacts/eEVM /home/christophe/build_artifacts/eEVM /home/christophe/build_artifacts/eEVM/build /home/christophe/build_artifacts/eEVM/build /home/christophe/build_artifacts/eEVM/build/CMakeFiles/evm.dir/DependInfo.cmake --color=
+make[2]: Leaving directory '/home/christophe/build_artifacts/eEVM/build'
+make -f CMakeFiles/evm.dir/build.make CMakeFiles/evm.dir/build
+make[2]: Entering directory '/home/christophe/build_artifacts/eEVM/build'
+[  4%] Building CXX object CMakeFiles/evm.dir/evm/account.cpp.o
+/usr/bin/c++   -I/ussr/include/boost -I/home/christophe/build_artifacts/eEVM/3rdparty  -Wall -Werror -std=gnu++1z -o CMakeFiles/evm.dir/evm/account.cpp.o -c /home/christophe/build_artifacts/eEVM/evm/account.cpp
+[  8%] Building CXX object CMakeFiles/evm.dir/evm/disassembler.cpp.o
+/usr/bin/c++   -I/ussr/include/boost -I/home/christophe/build_artifacts/eEVM/3rdparty  -Wall -Werror -std=gnu++1z -o CMakeFiles/evm.dir/evm/disassembler.cpp.o -c /home/christophe/build_artifacts/eEVM/evm/disassembler.cpp
+[ 13%] Building CXX object CMakeFiles/evm.dir/evm/rlp.cpp.o
+/usr/bin/c++   -I/ussr/include/boost -I/home/christophe/build_artifacts/eEVM/3rdparty  -Wall -Werror -std=gnu++1z -o CMakeFiles/evm.dir/evm/rlp.cpp.o -c /home/christophe/build_artifacts/eEVM/evm/rlp.cpp
+[ 17%] Building CXX object CMakeFiles/evm.dir/evm/simpleglobalstate.cpp.o
+/usr/bin/c++   -I/ussr/include/boost -I/home/christophe/build_artifacts/eEVM/3rdparty  -Wall -Werror -std=gnu++1z -o CMakeFiles/evm.dir/evm/simpleglobalstate.cpp.o -c /home/christophe/build_artifacts/eEVM/evm/simpleglobalstate.cpp
+[ 21%] Building CXX object CMakeFiles/evm.dir/evm/simplestorage.cpp.o
+/usr/bin/c++   -I/ussr/include/boost -I/home/christophe/build_artifacts/eEVM/3rdparty  -Wall -Werror -std=gnu++1z -o CMakeFiles/evm.dir/evm/simplestorage.cpp.o -c /home/christophe/build_artifacts/eEVM/evm/simplestorage.cpp
+[ 26%] Building CXX object CMakeFiles/evm.dir/evm/stack.cpp.o
+/usr/bin/c++   -I/ussr/include/boost -I/home/christophe/build_artifacts/eEVM/3rdparty  -Wall -Werror -std=gnu++1z -o CMakeFiles/evm.dir/evm/stack.cpp.o -c /home/christophe/build_artifacts/eEVM/evm/stack.cpp
+[ 30%] Building CXX object CMakeFiles/evm.dir/evm/transaction.cpp.o
+/usr/bin/c++   -I/ussr/include/boost -I/home/christophe/build_artifacts/eEVM/3rdparty  -Wall -Werror -std=gnu++1z -o CMakeFiles/evm.dir/evm/transaction.cpp.o -c /home/christophe/build_artifacts/eEVM/evm/transaction.cpp
+[ 34%] Building CXX object CMakeFiles/evm.dir/evm/util.cpp.o
+/usr/bin/c++   -I/ussr/include/boost -I/home/christophe/build_artifacts/eEVM/3rdparty  -Wall -Werror -std=gnu++1z -o CMakeFiles/evm.dir/evm/util.cpp.o -c /home/christophe/build_artifacts/eEVM/evm/util.cpp
+[ 39%] Building CXX object CMakeFiles/evm.dir/evm/processor.cpp.o
+/usr/bin/c++   -I/ussr/include/boost -I/home/christophe/build_artifacts/eEVM/3rdparty  -Wall -Werror -std=gnu++1z -o CMakeFiles/evm.dir/evm/processor.cpp.o -c /home/christophe/build_artifacts/eEVM/evm/processor.cpp
+[ 43%] Building C object CMakeFiles/evm.dir/3rdparty/keccak/KeccakHash.c.o
+/usr/bin/cc  -I/ussr/include/boost -I/home/christophe/build_artifacts/eEVM/3rdparty  -Wall -Werror -o CMakeFiles/evm.dir/3rdparty/keccak/KeccakHash.c.o   -c /home/christophe/build_artifacts/eEVM/3rdparty/keccak/KeccakHash.c
+[ 47%] Building C object CMakeFiles/evm.dir/3rdparty/keccak/KeccakP-1600-opt64.c.o
+/usr/bin/cc  -I/ussr/include/boost -I/home/christophe/build_artifacts/eEVM/3rdparty  -Wall -Werror -o CMakeFiles/evm.dir/3rdparty/keccak/KeccakP-1600-opt64.c.o   -c /home/christophe/build_artifacts/eEVM/3rdparty/keccak/KeccakP-1600-opt64.c
+[ 52%] Building C object CMakeFiles/evm.dir/3rdparty/keccak/KeccakSpongeWidth1600.c.o
+/usr/bin/cc  -I/ussr/include/boost -I/home/christophe/build_artifacts/eEVM/3rdparty  -Wall -Werror -o CMakeFiles/evm.dir/3rdparty/keccak/KeccakSpongeWidth1600.c.o   -c /home/christophe/build_artifacts/eEVM/3rdparty/keccak/KeccakSpongeWidth1600.c
+[ 56%] Building C object CMakeFiles/evm.dir/3rdparty/keccak/SimpleFIPS202.c.o
+/usr/bin/cc  -I/ussr/include/boost -I/home/christophe/build_artifacts/eEVM/3rdparty  -Wall -Werror -o CMakeFiles/evm.dir/3rdparty/keccak/SimpleFIPS202.c.o   -c /home/christophe/build_artifacts/eEVM/3rdparty/keccak/SimpleFIPS202.c
+[ 60%] Linking CXX static library libevm.a
+/usr/local/cmake-3.13.1-Linux-x86_64/bin/cmake -P CMakeFiles/evm.dir/cmake_clean_target.cmake
+/usr/local/cmake-3.13.1-Linux-x86_64/bin/cmake -E cmake_link_script CMakeFiles/evm.dir/link.txt --verbose=1
+/usr/bin/ar qc libevm.a  CMakeFiles/evm.dir/evm/account.cpp.o CMakeFiles/evm.dir/evm/disassembler.cpp.o CMakeFiles/evm.dir/evm/rlp.cpp.o CMakeFiles/evm.dir/evm/simpleglobalstate.cpp.o CMakeFiles/evm.dir/evm/simplestorage.cpp.o CMakeFiles/evm.dir/evm/stack.cpp.o CMakeFiles/evm.dir/evm/transaction.cpp.o CMakeFiles/evm.dir/evm/util.cpp.o CMakeFiles/evm.dir/evm/processor.cpp.o CMakeFiles/evm.dir/3rdparty/keccak/KeccakHash.c.o CMakeFiles/evm.dir/3rdparty/keccak/KeccakP-1600-opt64.c.o CMakeFiles/evm.dir/3rdparty/keccak/KeccakSpongeWidth1600.c.o CMakeFiles/evm.dir/3rdparty/keccak/SimpleFIPS202.c.o
+/usr/bin/ranlib libevm.a
+make[2]: Leaving directory '/home/christophe/build_artifacts/eEVM/build'
+[ 60%] Built target evm
+make -f CMakeFiles/hello_world.dir/build.make CMakeFiles/hello_world.dir/depend
+make[2]: Entering directory '/home/christophe/build_artifacts/eEVM/build'
+cd /home/christophe/build_artifacts/eEVM/build && /usr/local/cmake-3.13.1-Linux-x86_64/bin/cmake -E cmake_depends "Unix Makefiles" /home/christophe/build_artifacts/eEVM /home/christophe/build_artifacts/eEVM /home/christophe/build_artifacts/eEVM/build /home/christophe/build_artifacts/eEVM/build /home/christophe/build_artifacts/eEVM/build/CMakeFiles/hello_world.dir/DependInfo.cmake --color=
+make[2]: Leaving directory '/home/christophe/build_artifacts/eEVM/build'
+make -f CMakeFiles/hello_world.dir/build.make CMakeFiles/hello_world.dir/build
+make[2]: Entering directory '/home/christophe/build_artifacts/eEVM/build'
+[ 65%] Building CXX object CMakeFiles/hello_world.dir/samples/hello_world/main.cpp.o
+/usr/bin/c++   -I/home/christophe/build_artifacts/eEVM/3rdparty -I/home/christophe/build_artifacts/eEVM  -Wall -Werror -std=gnu++1z -o CMakeFiles/hello_world.dir/samples/hello_world/main.cpp.o -c /home/christophe/build_artifacts/eEVM/samples/hello_world/main.cpp
+[ 69%] Linking CXX executable hello_world
+/usr/local/cmake-3.13.1-Linux-x86_64/bin/cmake -E cmake_link_script CMakeFiles/hello_world.dir/link.txt --verbose=1
+/usr/bin/c++     CMakeFiles/hello_world.dir/samples/hello_world/main.cpp.o  -o hello_world libevm.a 
+make[2]: Leaving directory '/home/christophe/build_artifacts/eEVM/build'
+[ 69%] Built target hello_world
+make -f CMakeFiles/sum.dir/build.make CMakeFiles/sum.dir/depend
+make[2]: Entering directory '/home/christophe/build_artifacts/eEVM/build'
+cd /home/christophe/build_artifacts/eEVM/build && /usr/local/cmake-3.13.1-Linux-x86_64/bin/cmake -E cmake_depends "Unix Makefiles" /home/christophe/build_artifacts/eEVM /home/christophe/build_artifacts/eEVM /home/christophe/build_artifacts/eEVM/build /home/christophe/build_artifacts/eEVM/build /home/christophe/build_artifacts/eEVM/build/CMakeFiles/sum.dir/DependInfo.cmake --color=
+make[2]: Leaving directory '/home/christophe/build_artifacts/eEVM/build'
+make -f CMakeFiles/sum.dir/build.make CMakeFiles/sum.dir/build
+make[2]: Entering directory '/home/christophe/build_artifacts/eEVM/build'
+[ 73%] Building CXX object CMakeFiles/sum.dir/samples/sum/main.cpp.o
+/usr/bin/c++   -I/home/christophe/build_artifacts/eEVM/3rdparty -I/home/christophe/build_artifacts/eEVM  -Wall -Werror -std=gnu++1z -o CMakeFiles/sum.dir/samples/sum/main.cpp.o -c /home/christophe/build_artifacts/eEVM/samples/sum/main.cpp
+[ 78%] Linking CXX executable sum
+/usr/local/cmake-3.13.1-Linux-x86_64/bin/cmake -E cmake_link_script CMakeFiles/sum.dir/link.txt --verbose=1
+/usr/bin/c++     CMakeFiles/sum.dir/samples/sum/main.cpp.o  -o sum libevm.a 
+make[2]: Leaving directory '/home/christophe/build_artifacts/eEVM/build'
+[ 78%] Built target sum
+make -f CMakeFiles/erc20.dir/build.make CMakeFiles/erc20.dir/depend
+make[2]: Entering directory '/home/christophe/build_artifacts/eEVM/build'
+cd /home/christophe/build_artifacts/eEVM/build && /usr/local/cmake-3.13.1-Linux-x86_64/bin/cmake -E cmake_depends "Unix Makefiles" /home/christophe/build_artifacts/eEVM /home/christophe/build_artifacts/eEVM /home/christophe/build_artifacts/eEVM/build /home/christophe/build_artifacts/eEVM/build /home/christophe/build_artifacts/eEVM/build/CMakeFiles/erc20.dir/DependInfo.cmake --color=
+make[2]: Leaving directory '/home/christophe/build_artifacts/eEVM/build'
+make -f CMakeFiles/erc20.dir/build.make CMakeFiles/erc20.dir/build
+make[2]: Entering directory '/home/christophe/build_artifacts/eEVM/build'
+[ 82%] Building CXX object CMakeFiles/erc20.dir/samples/erc20/main.cpp.o
+/usr/bin/c++   -I/home/christophe/build_artifacts/eEVM/3rdparty -I/home/christophe/build_artifacts/eEVM  -Wall -Werror -std=gnu++1z -o CMakeFiles/erc20.dir/samples/erc20/main.cpp.o -c /home/christophe/build_artifacts/eEVM/samples/erc20/main.cpp
+[ 86%] Linking CXX executable erc20
+/usr/local/cmake-3.13.1-Linux-x86_64/bin/cmake -E cmake_link_script CMakeFiles/erc20.dir/link.txt --verbose=1
+/usr/bin/c++     CMakeFiles/erc20.dir/samples/erc20/main.cpp.o  -o erc20 libevm.a 
+make[2]: Leaving directory '/home/christophe/build_artifacts/eEVM/build'
+[ 86%] Built target erc20
+make -f CMakeFiles/evm_tests.dir/build.make CMakeFiles/evm_tests.dir/depend
+make[2]: Entering directory '/home/christophe/build_artifacts/eEVM/build'
+cd /home/christophe/build_artifacts/eEVM/build && /usr/local/cmake-3.13.1-Linux-x86_64/bin/cmake -E cmake_depends "Unix Makefiles" /home/christophe/build_artifacts/eEVM /home/christophe/build_artifacts/eEVM /home/christophe/build_artifacts/eEVM/build /home/christophe/build_artifacts/eEVM/build /home/christophe/build_artifacts/eEVM/build/CMakeFiles/evm_tests.dir/DependInfo.cmake --color=
+make[2]: Leaving directory '/home/christophe/build_artifacts/eEVM/build'
+make -f CMakeFiles/evm_tests.dir/build.make CMakeFiles/evm_tests.dir/build
+make[2]: Entering directory '/home/christophe/build_artifacts/eEVM/build'
+[ 91%] Building CXX object CMakeFiles/evm_tests.dir/tests/main.cpp.o
+/usr/bin/c++   -I/home/christophe/build_artifacts/eEVM/3rdparty -I/home/christophe/build_artifacts/eEVM  -Wall -Werror --coverage -fprofile-arcs -ftest-coverage -std=gnu++1z -o CMakeFiles/evm_tests.dir/tests/main.cpp.o -c /home/christophe/build_artifacts/eEVM/tests/main.cpp
+[ 95%] Building CXX object CMakeFiles/evm_tests.dir/tests/harness.cpp.o
+/usr/bin/c++   -I/home/christophe/build_artifacts/eEVM/3rdparty -I/home/christophe/build_artifacts/eEVM  -Wall -Werror --coverage -fprofile-arcs -ftest-coverage -std=gnu++1z -o CMakeFiles/evm_tests.dir/tests/harness.cpp.o -c /home/christophe/build_artifacts/eEVM/tests/harness.cpp
+[100%] Linking CXX executable evm_tests
+/usr/local/cmake-3.13.1-Linux-x86_64/bin/cmake -E cmake_link_script CMakeFiles/evm_tests.dir/link.txt --verbose=1
+/usr/bin/c++     CMakeFiles/evm_tests.dir/tests/main.cpp.o CMakeFiles/evm_tests.dir/tests/harness.cpp.o  -o evm_tests libevm.a -lgcov 
+make[2]: Leaving directory '/home/christophe/build_artifacts/eEVM/build'
+[100%] Built target evm_tests
+make[1]: Leaving directory '/home/christophe/build_artifacts/eEVM/build'
+/usr/local/cmake-3.13.1-Linux-x86_64/bin/cmake -E cmake_progress_start /home/christophe/build_artifacts/eEVM/build/CMakeFiles 0

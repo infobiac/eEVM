@@ -46,6 +46,7 @@ add_library(evm STATIC
 )
 target_include_directories(evm PRIVATE
   ${Boost_INCLUDE_DIR}
+  /ussr/include/boost
   ${CMAKE_CURRENT_SOURCE_DIR}/3rdparty
 )
 
@@ -83,6 +84,7 @@ function(add_sample name)
   target_link_libraries(${name} evm)
 endfunction()
 
+# set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -nostdinc -m64 -fPIC -I/home/christophe/openenclave-install/include/openenclave/3rdparty/libcxx -I/home/christophe/openenclave-install/include/openenclave/3rdparty/libc -I/home/christophe/openenclave-install/include/openenclave/3rdparty -I/home/christophe/openenclave-install/include")
 add_sample(hello_world)
 add_sample(sum)
 add_sample(erc20)
