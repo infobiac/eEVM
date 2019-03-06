@@ -1,0 +1,22 @@
+c++ -I/home/christophe/build_artifacts/eEVM/3rdparty  -Wall -Werror -std=gnu++1z -o testbuild/account.cpp.o -c /home/christophe/build_artifacts/eEVM/evm/account.cpp
+
+c++ -I/home/christophe/build_artifacts/eEVM/3rdparty  -Wall -Werror -std=gnu++1z -o testbuild/disassembler.cpp.o -c /home/christophe/build_artifacts/eEVM/evm/disassembler.cpp
+
+c++ -I/home/christophe/build_artifacts/eEVM/3rdparty  -Wall -Werror -std=gnu++1z -o testbuild/rlp.cpp.o -c /home/christophe/build_artifacts/eEVM/evm/rlp.cpp
+
+
+c++ -I/home/christophe/build_artifacts/eEVM/3rdparty  -Wall -Werror -std=gnu++1z -o testbuild/simpleglobalstate.cpp.o -c /home/christophe/build_artifacts/eEVM/evm/simpleglobalstate.cpp
+
+c++ -I/home/christophe/build_artifacts/eEVM/3rdparty  -Wall -Werror -std=gnu++1z -o testbuild/simplestorage.cpp.o -c -c /home/christophe/build_artifacts/eEVM/evm/simplestorage.cpp
+
+c++ -I/home/christophe/build_artifacts/eEVM/3rdparty  -Wall -Werror -std=gnu++1z -o testbuild/stack.cpp.o -c /home/christophe/build_artifacts/eEVM/evm/stack.cpp
+
+c++ -I/home/christophe/build_artifacts/eEVM/3rdparty  -Wall -Werror -std=gnu++1z -o testbuild/transaction.cpp.o -c /home/christophe/build_artifacts/eEVM/evm/transaction.cpp
+
+c++ -I/home/christophe/build_artifacts/eEVM/3rdparty  -Wall -Werror -std=gnu++1z -o testbuild/util.cpp.o -c /home/christophe/build_artifacts/eEVM/evm/util.cpp
+
+c++ -I/home/christophe/build_artifacts/eEVM/3rdparty  -Wall -Werror -std=gnu++1z -o testbuild/processor.cpp.o -c /home/christophe/build_artifacts/eEVM/evm/processor.cpp
+
+cc -I/home/christophe/build_artifacts/eEVM/3rdparty  -Wall -Werror -o testbuild/keccak/KeccakHash.c.o   -c /home/christophe/build_artifacts/eEVM/3rdparty/keccak/KeccakHash.c
+
+cc -I/home/christophe/build_artifacts/eEVM/3rdparty  -Wall -Werror -o testbuild/keccak/KeccakP-1600-opt64.c.o   -c /home/christophe/build_artifacts/eEVM/3rdparty/keccak/KeccakP-1600-opt64.c
