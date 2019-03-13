@@ -1,4 +1,7 @@
-c++ -I/home/christophe/build_artifacts/eEVM/3rdparty  -Wall -Werror -std=gnu++1z -o testbuild/account.cpp.o -c /home/christophe/build_artifacts/eEVM/evm/account.cpp
+## Ran pkg-config oeenclave-g++ --cflags to get cflags
+
+
+c++ -I/home/christophe/build_artifacts/eEVM/3rdparty  -nostdinc -m64 -fPIC -I/home/christophe/openenclave-install/include/openenclave/3rdparty/libcxx -I/home/christophe/openenclave-install/include/openenclave/3rdparty/libc -I/home/christophe/openenclave-install/include/openenclave/3rdparty -I/home/christophe/openenclave-install/include -Wall -Werror -std=gnu++1z -o testbuild/account.cpp.o -c /home/christophe/build_artifacts/eEVM/evm/account.cpp
 
 c++ -I/home/christophe/build_artifacts/eEVM/3rdparty  -Wall -Werror -std=gnu++1z -o testbuild/disassembler.cpp.o -c /home/christophe/build_artifacts/eEVM/evm/disassembler.cpp
 
