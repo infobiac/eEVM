@@ -3,9 +3,9 @@ cmake_minimum_required(VERSION 3.10)
 project(evm)
 
 set(CMAKE_CXX_STANDARD 17)
-
-set(Boost_ADDITIONAL_VERSIONS "1.67" "1.67.0")
-find_package(Boost 1.60.0 REQUIRED)
+#
+#set(Boost_ADDITIONAL_VERSIONS "1.67" "1.67.0")
+#find_package(Boost 1.60.0 REQUIRED)
 
 if(MSVC)
   # Set Windows compiler options.
@@ -84,7 +84,9 @@ function(add_sample name)
   target_link_libraries(${name} evm)
 endfunction()
 
-# set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -nostdinc -m64 -fPIC -I/home/christophe/openenclave-install/include/openenclave/3rdparty/libcxx -I/home/christophe/openenclave-install/include/openenclave/3rdparty/libc -I/home/christophe/openenclave-install/include/openenclave/3rdparty -I/home/christophe/openenclave-install/include")
+set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -nostdinc -m64 -fPIC -I/home/christophe/openenclave-install/include/openenclave/3rdparty/libcxx -I/home/christophe/openenclave-install/include/openenclave/3rdparty/libc -I/home/christophe/openenclave-install/include/openenclave/3rdparty -I/home/christophe/openenclave-install/include")
+set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} -nostdinc -m64 -fPIC -I/home/christophe/openenclave-install/include/openenclave/3rdparty/libc -I/home/christophe/openenclave-install/include/openenclave/3rdparty -I/home/christophe/openenclave-install/include")
+set(CMAKE_EXE_LINKER_FLAGS "-L/home/christophe/openenclave-install/lib/openenclave/enclave -nostdlib -nodefaultlibs -nostartfiles -Wl,--no-undefined -Wl,-Bstatic -Wl,-Bsymbolic -Wl,--export-dynamic -Wl,-pie -Wl,--build-id -loeenclave -lmbedx509 -lmbedcrypto -loelibcxx -loelibc -loecore ")
 add_sample(hello_world)
 add_sample(sum)
 add_sample(erc20)

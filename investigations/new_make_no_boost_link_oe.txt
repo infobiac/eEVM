@@ -1,32 +1,37 @@
 ## Ran pkg-config oeenclave-g++ --cflags to get cflags
 
 
-c++ -I/home/christophe/build_artifacts/eEVM/3rdparty  -nostdinc -m64 -fPIC -I/home/christophe/openenclave-install/include/openenclave/3rdparty/libcxx -I/home/christophe/openenclave-install/include/openenclave/3rdparty/libc -I/home/christophe/openenclave-install/include/openenclave/3rdparty -I/home/christophe/openenclave-install/include -Wall -Werror -std=gnu++1z -o testbuild/account.cpp.o -c /home/christophe/build_artifacts/eEVM/evm/account.cpp
+c++ -I/home/christophe/build_artifacts/eEVM/3rdparty -nostdinc -m64 -fPIC -I/home/christophe/openenclave-install/include/openenclave/3rdparty/libcxx -I/home/christophe/openenclave-install/include/openenclave/3rdparty/libc -I/home/christophe/openenclave-install/include/openenclave/3rdparty -I/home/christophe/openenclave-install/include -Wall -Werror -std=gnu++1z -o testbuild/account.cpp.o -c /home/christophe/build_artifacts/eEVM/evm/account.cpp
 
-c++ -I/home/christophe/build_artifacts/eEVM/3rdparty  -Wall -Werror -std=gnu++1z -o testbuild/disassembler.cpp.o -c /home/christophe/build_artifacts/eEVM/evm/disassembler.cpp
-
-c++ -I/home/christophe/build_artifacts/eEVM/3rdparty  -Wall -Werror -std=gnu++1z -o testbuild/rlp.cpp.o -c /home/christophe/build_artifacts/eEVM/evm/rlp.cpp
+c++ -I/home/christophe/build_artifacts/eEVM/3rdparty -I/home/christophe/build_artifacts/eEVM -nostdinc -m64 -fPIC -I/home/christophe/openenclave-install/include/openenclave/3rdparty/libcxx -I/home/christophe/openenclave-install/include/openenclave/3rdparty/libc -I/home/christophe/openenclave-install/include/openenclave/3rdparty -I/home/christophe/openenclave-install/include -Wall -Werror -std=gnu++1z  -o enc.o -c /home/christophe/build_artifacts/eEVM/sample_enclaves/helloworld/enc/enc.cpp
 
 
-c++ -I/home/christophe/build_artifacts/eEVM/3rdparty  -Wall -Werror -std=gnu++1z -o testbuild/simpleglobalstate.cpp.o -c /home/christophe/build_artifacts/eEVM/evm/simpleglobalstate.cpp
+c++ -I/home/christophe/build_artifacts/eEVM/3rdparty -nostdinc -m64 -fPIC -I/home/christophe/openenclave-install/include/openenclave/3rdparty/libcxx -I/home/christophe/openenclave-install/include/openenclave/3rdparty/libc -I/home/christophe/openenclave-install/include/openenclave/3rdparty -I/home/christophe/openenclave-install/include  -Wall -Werror -std=gnu++1z -o testbuild/disassembler.cpp.o -c /home/christophe/build_artifacts/eEVM/evm/disassembler.cpp
 
-c++ -I/home/christophe/build_artifacts/eEVM/3rdparty  -Wall -Werror -std=gnu++1z -o testbuild/simplestorage.cpp.o -c -c /home/christophe/build_artifacts/eEVM/evm/simplestorage.cpp
+c++ -I/home/christophe/build_artifacts/eEVM/3rdparty -nostdinc -m64 -fPIC -I/home/christophe/openenclave-install/include/openenclave/3rdparty/libcxx -I/home/christophe/openenclave-install/include/openenclave/3rdparty/libc -I/home/christophe/openenclave-install/include/openenclave/3rdparty -I/home/christophe/openenclave-install/include -Wall -Werror -std=gnu++1z -o testbuild/rlp.cpp.o -c /home/christophe/build_artifacts/eEVM/evm/rlp.cpp
 
-c++ -I/home/christophe/build_artifacts/eEVM/3rdparty  -Wall -Werror -std=gnu++1z -o testbuild/stack.cpp.o -c /home/christophe/build_artifacts/eEVM/evm/stack.cpp
 
-c++ -I/home/christophe/build_artifacts/eEVM/3rdparty  -Wall -Werror -std=gnu++1z -o testbuild/transaction.cpp.o -c /home/christophe/build_artifacts/eEVM/evm/transaction.cpp
+c++ -I/home/christophe/build_artifacts/eEVM/3rdparty -nostdinc -m64 -fPIC -I/home/christophe/openenclave-install/include/openenclave/3rdparty/libcxx -I/home/christophe/openenclave-install/include/openenclave/3rdparty/libc -I/home/christophe/openenclave-install/include/openenclave/3rdparty -I/home/christophe/openenclave-install/include -Wall -Werror -std=gnu++1z -o testbuild/simpleglobalstate.cpp.o -c /home/christophe/build_artifacts/eEVM/evm/simpleglobalstate.cpp
 
-c++ -I/home/christophe/build_artifacts/eEVM/3rdparty  -Wall -Werror -std=gnu++1z -o testbuild/util.cpp.o -c /home/christophe/build_artifacts/eEVM/evm/util.cpp
+c++ -I/home/christophe/build_artifacts/eEVM/3rdparty -nostdinc -m64 -fPIC -I/home/christophe/openenclave-install/include/openenclave/3rdparty/libcxx -I/home/christophe/openenclave-install/include/openenclave/3rdparty/libc -I/home/christophe/openenclave-install/include/openenclave/3rdparty -I/home/christophe/openenclave-install/include -Wall -Werror -std=gnu++1z -o testbuild/simplestorage.cpp.o -c -c /home/christophe/build_artifacts/eEVM/evm/simplestorage.cpp
 
-c++ -I/home/christophe/build_artifacts/eEVM/3rdparty  -Wall -Werror -std=gnu++1z -o testbuild/processor.cpp.o -c /home/christophe/build_artifacts/eEVM/evm/processor.cpp
+c++ -I/home/christophe/build_artifacts/eEVM/3rdparty -nostdinc -m64 -fPIC -I/home/christophe/openenclave-install/include/openenclave/3rdparty/libcxx -I/home/christophe/openenclave-install/include/openenclave/3rdparty/libc -I/home/christophe/openenclave-install/include/openenclave/3rdparty -I/home/christophe/openenclave-install/include -Wall -Werror -std=gnu++1z -o testbuild/stack.cpp.o -c /home/christophe/build_artifacts/eEVM/evm/stack.cpp
 
-cc -I/home/christophe/build_artifacts/eEVM/3rdparty  -Wall -Werror -o testbuild/keccak/KeccakHash.c.o   -c /home/christophe/build_artifacts/eEVM/3rdparty/keccak/KeccakHash.c
+c++ -I/home/christophe/build_artifacts/eEVM/3rdparty -nostdinc -m64 -fPIC -I/home/christophe/openenclave-install/include/openenclave/3rdparty/libcxx -I/home/christophe/openenclave-install/include/openenclave/3rdparty/libc -I/home/christophe/openenclave-install/include/openenclave/3rdparty -I/home/christophe/openenclave-install/include -Wall -Werror -std=gnu++1z -o testbuild/transaction.cpp.o -c /home/christophe/build_artifacts/eEVM/evm/transaction.cpp
 
-cc -I/home/christophe/build_artifacts/eEVM/3rdparty  -Wall -Werror -o testbuild/keccak/KeccakP-1600-opt64.c.o   -c /home/christophe/build_artifacts/eEVM/3rdparty/keccak/KeccakP-1600-opt64.c
+c++ -I/home/christophe/build_artifacts/eEVM/3rdparty -nostdinc -m64 -fPIC -I/home/christophe/openenclave-install/include/openenclave/3rdparty/libcxx -I/home/christophe/openenclave-install/include/openenclave/3rdparty/libc -I/home/christophe/openenclave-install/include/openenclave/3rdparty -I/home/christophe/openenclave-install/include -Wall -Werror -std=gnu++1z -o testbuild/util.cpp.o -c /home/christophe/build_artifacts/eEVM/evm/util.cpp
 
-cc -I/home/christophe/build_artifacts/eEVM/3rdparty  -Wall -Werror -o testbuild/keccak/KeccakSpongeWidth1600.c.o   -c /home/christophe/build_artifacts/eEVM/3rdparty/keccak/KeccakSpongeWidth1600.c
+c++ -I/home/christophe/build_artifacts/eEVM/3rdparty -nostdinc -m64 -fPIC -I/home/christophe/openenclave-install/include/openenclave/3rdparty/libcxx -I/home/christophe/openenclave-install/include/openenclave/3rdparty/libc -I/home/christophe/openenclave-install/include/openenclave/3rdparty -I/home/christophe/openenclave-install/include -Wall -Werror -std=gnu++1z -o testbuild/processor.cpp.o -c /home/christophe/build_artifacts/eEVM/evm/processor.cpp
 
-cc -I/home/christophe/build_artifacts/eEVM/3rdparty  -Wall -Werror -o testbuild/keccak/SimpleFIPS202.c.o   -c /home/christophe/build_artifacts/eEVM/3rdparty/keccak/SimpleFIPS202.c
+## Ran pkg-config oeenclave-gcc --cflags to get cflags
+
+cc -I/home/christophe/build_artifacts/eEVM/3rdparty -nostdinc -m64 -fPIC -I/home/christophe/openenclave-install/include/openenclave/3rdparty/libc -I/home/christophe/openenclave-install/include/openenclave/3rdparty -I/home/christophe/openenclave-install/include  -Wall -Werror -o testbuild/keccak/KeccakHash.c.o   -c /home/christophe/build_artifacts/eEVM/3rdparty/keccak/KeccakHash.c
+
+cc -I/home/christophe/build_artifacts/eEVM/3rdparty -nostdinc -m64 -fPIC -I/home/christophe/openenclave-install/include/openenclave/3rdparty/libc -I/home/christophe/openenclave-install/include/openenclave/3rdparty -I/home/christophe/openenclave-install/include -Wall -Werror -o testbuild/keccak/KeccakP-1600-opt64.c.o   -c /home/christophe/build_artifacts/eEVM/3rdparty/keccak/KeccakP-1600-opt64.c
+
+cc -I/home/christophe/build_artifacts/eEVM/3rdparty -nostdinc -m64 -fPIC -I/home/christophe/openenclave-install/include/openenclave/3rdparty/libc -I/home/christophe/openenclave-install/include/openenclave/3rdparty -I/home/christophe/openenclave-install/include -Wall -Werror -o testbuild/keccak/KeccakSpongeWidth1600.c.o   -c /home/christophe/build_artifacts/eEVM/3rdparty/keccak/KeccakSpongeWidth1600.c
+
+cc -I/home/christophe/build_artifacts/eEVM/3rdparty -nostdinc -m64 -fPIC -I/home/christophe/openenclave-install/include/openenclave/3rdparty/libc -I/home/christophe/openenclave-install/include/openenclave/3rdparty -I/home/christophe/openenclave-install/include -Wall -Werror -o testbuild/keccak/SimpleFIPS202.c.o   -c /home/christophe/build_artifacts/eEVM/3rdparty/keccak/SimpleFIPS202.c
 
 
 ar qc libevm.a  testbuild/account.cpp.o testbuild/disassembler.cpp.o testbuild/rlp.cpp.o testbuild/simpleglobalstate.cpp.o testbuild/simplestorage.cpp.o testbuild/stack.cpp.o testbuild/transaction.cpp.o testbuild/util.cpp.o testbuild/processor.cpp.o testbuild/keccak/KeccakHash.c.o testbuild/keccak/KeccakP-1600-opt64.c.o testbuild/keccak/KeccakSpongeWidth1600.c.o testbuild/keccak/SimpleFIPS202.c.o
@@ -37,8 +42,8 @@ ranlib libevm.a
 
 ### Here is a sample (helloworld) build
 
-c++   -I/home/christophe/build_artifacts/eEVM/3rdparty -I/home/christophe/build_artifacts/eEVM  -Wall -Werror -std=gnu++1z -o testsample/main.cpp.o -c /home/christophe/build_artifacts/eEVM/samples/hello_world/main.cpp
-c++    testsample/main.cpp.o  -o hello_world libevm.a 
+c++   -I/home/christophe/build_artifacts/eEVM/3rdparty -I/home/christophe/build_artifacts/eEVM -nostdinc -m64 -fPIC -I/home/christophe/openenclave-install/include/openenclave/3rdparty/libcxx -I/home/christophe/openenclave-install/include/openenclave/3rdparty/libc -I/home/christophe/openenclave-install/include/openenclave/3rdparty -I/home/christophe/openenclave-install/include -Wall -Werror -std=gnu++1z -o testsample/main.cpp.o -c /home/christophe/build_artifacts/eEVM/samples/hello_world/main.cpp
+c++  -L/home/christophe/openenclave-install/lib/openenclave/enclave -nostdlib -nodefaultlibs -nostartfiles -Wl,--no-undefined -Wl,-Bstatic -Wl,-Bsymbolic -Wl,--export-dynamic -Wl,-pie -Wl,--build-id -loeenclave -lmbedx509 -lmbedcrypto -loelibcxx -loelibc -loecore  testsample/main.cpp.o  -o hello_world libevm.a 
 
 ### Here is erc20 build
 
